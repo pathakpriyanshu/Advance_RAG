@@ -12,3 +12,4 @@ sentence-transformers
 python-dotenv
 pypdf
 pdfminer.six
+pysqlite3-binary
