@@ -2,6 +2,14 @@ import os, tempfile, shutil
 import streamlit as st
 from dotenv import load_dotenv
 
+import os
+os.environ["LANGCHAIN_TRACING_V2"] = "false"
+os.environ["LANGCHAIN_ENDPOINT"] = ""
+os.environ["LANGCHAIN_API_KEY"] = ""
+os.environ["LANGCHAIN_PROJECT"] = ""
+os.environ["LANGCHAIN_VERBOSE"] = "false"
+os.environ["CHROMA_TELEMETRY"] = "False"
+
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import HuggingFaceBgeEmbeddings
